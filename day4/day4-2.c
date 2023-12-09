@@ -11,11 +11,11 @@
 #define MYPICK_COUNT 25
 
 typedef struct {
-	unsigned char number;	// card number
-	char matches;			// number of matches this card has
-	int instances;			// number of instances of this card
-	int* winners;			// pointer to this card's winning numbers
-	int* mypicks;			// pointer to my number picks for this card
+	unsigned char number;		// card identifying number
+	char matches;				// number of matches this card has
+	int instances;				// number of instances of this card
+	int* winners;				// pointer to this card's winning numbers
+	int* mypicks;				// pointer to my number picks for this card
 } Card;
 
 Card* read_cards_from_file(const char* file_name, int* count);
